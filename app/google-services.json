@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "450044488379",
+    "firebase_url": "https://paqueteria2-81ae6.firebaseio.com",
+    "project_id": "paqueteria2-81ae6",
+    "storage_bucket": "paqueteria2-81ae6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450044488379:android:8fdf168215120fca",
+        "android_client_info": {
+          "package_name": "com.example.paqueteria2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450044488379-g3o9hnrn868mcm75sv9s7417s5ut9ulf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paqueteria2",
+            "certificate_hash": "f54e5fac28829b2921795d136a4946a7fac5a98f"
+          }
+        },
+        {
+          "client_id": "450044488379-9io1irutkjme0mjqelds0p4pclt6i0js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDwh8aNyfgt0pFmHpzwS6r4KMPwJV82e4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450044488379-9io1irutkjme0mjqelds0p4pclt6i0js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

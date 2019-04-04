@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="706dp"
+        android:layout_above="@+id/info"
+        android:layout_marginBottom="0dp"
+        tools:context=".MapsActivity2" />
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#0044C4"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/totaldistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Distancia:000.000 mm"
+            android:textColor="#000" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/info"
+            android:padding="3dp"
+            android:text="Tiempo: 00.00"
+            android:textColor="#000" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/info"
+            android:padding="3dp"
+            android:text="Costo: $10.00"
+            android:textColor="#000" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
