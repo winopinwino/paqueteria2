@@ -190,7 +190,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
 
 
 
-        String url =" https://maps.googleapis.com/maps/api/directions/json?origin="+latitudOrigen+","+longitudOrigen+"&destination="+latitudDestino+","+longitudDestino +"&key=AIzaSyDJmRZ_9Jddux73THvgzcve81WM-sbSvvA";
+        String url =" https://maps.googleapis.com/maps/api/directions/json?origin="+latitudOrigen+","+longitudOrigen+"&destination="+latitudDestino+","+longitudDestino +"&key=your_api_key";
         RequestQueue queue = Volley.newRequestQueue(this);
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
