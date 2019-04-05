@@ -75,7 +75,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         costo = (TextView)findViewById(R.id.cost);
         tiempo=(TextView)findViewById(R.id.tiempo);
         // Initialize Places.
-        Places.initialize(getApplicationContext(), "AIzaSyDJmRZ_9Jddux73THvgzcve81WM-sbSvvA");
+        Places.initialize(getApplicationContext(), "your_api_key");
 
 // Create a new Places client instance.
         PlacesClient placesClient = Places.createClient(this);
@@ -179,7 +179,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 //Log.i(TAG, "Place: " + place.getName() + ", " + place.getId() + "," + place.getLatLng());
                 destino = place.getLatLng();
 
-                String url =" https://maps.googleapis.com/maps/api/directions/json?origin="+latitudOrigen+","+longitudOrigen+"&destination="+place.getLatLng().latitude+","+place.getLatLng().longitude +"&key=AIzaSyDJmRZ_9Jddux73THvgzcve81WM-sbSvvA";
+                String url =" https://maps.googleapis.com/maps/api/directions/json?origin="+latitudOrigen+","+longitudOrigen+"&destination="+place.getLatLng().latitude+","+place.getLatLng().longitude +"&key=your_api_key";
                 RequestQueue queue = Volley.newRequestQueue(this);
 
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
